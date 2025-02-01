@@ -49,7 +49,7 @@ public class GamePanel extends JPanel implements Runnable {
 
         //Adds a key listener to the game panel so keyboard input is accepted.
         this.addKeyListener(keyHandler);
-        //Sets focusability to true.
+        //Sets focusability to true. Allows program to focus on keyboard input.
         this.setFocusable(true);
     }
 
@@ -99,56 +99,95 @@ public class GamePanel extends JPanel implements Runnable {
 
     /**
      * Game loop run method using delta/accumulator game loop setup.
+     * This method is used over the sleep method due to the possibility of inaccuracies with timing.
      */
     public void run() {
+        //0.0166 seconds.
         double drawInterval = 1000000000/FPS;
+        //Creates variable named delta and initializes it to 0.
         double delta = 0;
+        //Calculates last time.
         long lastTime = System.nanoTime();
+        //Will store current time during game loop.
         long currentTime;
+        //Sets timer to 0.
         long timer = 0;
+        //Sets draw count to 0.
         int drawCount = 0;
 
+        //Loop that checks to see if the game thread is null - if not, run everything inside.
         while(gameThread != null) {
+            //Check current time.
             currentTime = System.nanoTime();
 
+            //Add past time divided by drawInterval to delta.
             delta += (currentTime - lastTime) / drawInterval;
+            //Add past time to timer.
             timer += (currentTime - lastTime);
+            //Sets last time to the current time.
             lastTime = currentTime;
 
+            //Checks to see if delta is greater than 1.
             if(delta >= 1) {
+                //Update and repaint.
                 update();
                 repaint();
+                //Subtract 1 from delta.
                 delta--;
+                //Increase draw count.
                 drawCount++;
             }
 
+            //Calculates the current FPS and prints it into the console.
             if(timer >= 1000000000) {
+                //Prints current FPS.
                 System.out.println("FPS: " + drawCount);
+                //Sets draw count to 0.
                 drawCount = 0;
+                //Sets timer to 0.
                 timer = 0;
             }
         }
     }
+
+    /**
+     * Update method that updates the contents on the screen 60 times per second (or however
+     * many frames per second the game is set to when running).
+     */
     public void update() {
+        //Moves player up.
         if(keyHandler.upPressed) {
             playerY -= playerSpeed;
         }
+        //Moves player down.
         else if(keyHandler.downPressed) {
             playerY += playerSpeed;
         }
+        //Moves player to the left.
         else if(keyHandler.leftPressed) {
             playerX -= playerSpeed;
         }
+        //Moves player to the right.
         else if(keyHandler.rightPressed) {
             playerX += playerSpeed;
         }
     }
+
+    /**
+     * Method that assists in drawing components on a screen.
+     * @param g - type Graphics which helps with displaying things on the screen.
+     */
     public void paintComponent(Graphics g) {
+        //Calls parent class method and passes g as a parameter.
         super.paintComponent(g);
 
+        //Graphics2D extends Graphics - creates a Graphics2D object by casting g to a Graphics2D.
         Graphics2D g2 = (Graphics2D) g;
+        //Sets color of component to white.
         g2.setColor(Color.white);
+        //Fills rectangle with dimensions of the player position and tile size.
         g2.fillRect(playerX, playerY, tileSize, tileSize);
+        //Ensures that content is removed when program execution finishes. Saves memory.
         g2.dispose();
     }
 }
