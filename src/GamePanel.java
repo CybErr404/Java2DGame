@@ -26,17 +26,14 @@ public class GamePanel extends JPanel implements Runnable {
     //Sets FPS to 60.
     int FPS = 60;
 
+    TileManager tileManager = new TileManager(this);
+
     //Creates new KeyHandler object for key mapping.
     KeyHandler keyHandler = new KeyHandler();
     //Helps represent concept of time - keeps game running in real time until closed.
     Thread gameThread;
-
-    //PLAYER POSITION
-    //Set player's default position.
-    int playerX = 100;
-    int playerY = 100;
-    //Sets player's default speed.
-    int playerSpeed = 4;
+    //Player object from Player class.
+    Player player = new Player(this, keyHandler);
 
     //Constructor that sets the main attributes of the game panel.
     public GamePanel() {
@@ -155,22 +152,7 @@ public class GamePanel extends JPanel implements Runnable {
      * many frames per second the game is set to when running).
      */
     public void update() {
-        //Moves player up.
-        if(keyHandler.upPressed) {
-            playerY -= playerSpeed;
-        }
-        //Moves player down.
-        else if(keyHandler.downPressed) {
-            playerY += playerSpeed;
-        }
-        //Moves player to the left.
-        else if(keyHandler.leftPressed) {
-            playerX -= playerSpeed;
-        }
-        //Moves player to the right.
-        else if(keyHandler.rightPressed) {
-            playerX += playerSpeed;
-        }
+        player.update();
     }
 
     /**
@@ -183,10 +165,11 @@ public class GamePanel extends JPanel implements Runnable {
 
         //Graphics2D extends Graphics - creates a Graphics2D object by casting g to a Graphics2D.
         Graphics2D g2 = (Graphics2D) g;
-        //Sets color of component to white.
-        g2.setColor(Color.white);
-        //Fills rectangle with dimensions of the player position and tile size.
-        g2.fillRect(playerX, playerY, tileSize, tileSize);
+
+        tileManager.draw(g2);
+
+        player.draw(g2);
+
         //Ensures that content is removed when program execution finishes. Saves memory.
         g2.dispose();
     }
