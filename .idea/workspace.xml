@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6fddc9d-7be4-40ce-a9c0-d173bb58f81f" name="Changes" comment="Added Player and TileManager objects">
-      <change afterPath="$PROJECT_DIR$/src/CollisionChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
+    <list default="true" id="b6fddc9d-7be4-40ce-a9c0-d173bb58f81f" name="Changes" comment="Added Rectangle object and collision checker variable">
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TileManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +125,56 @@
       <option name="project" value="LOCAL" />
       <updated>1738633336753</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added world map">
+      <created>1738884131776</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1738884131776</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added dirt, sand, and tree tiles">
+      <created>1738884148925</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738884148925</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added object images">
+      <created>1738884165179</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1738884165179</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added new tiles in array and edited methods">
+      <created>1738884234258</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1738884234258</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added CollisionChecker to check for tile collision">
+      <created>1738884259202</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1738884259202</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Edited paint method and added objects">
+      <created>1738884306720</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1738884306720</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added Rectangle object and collision checker variable">
+      <created>1738884353693</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1738884353693</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +198,13 @@
     <MESSAGE value="Created Entity and Player classes" />
     <MESSAGE value="Created Tile and TileManager classes" />
     <MESSAGE value="Added Player and TileManager objects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Player and TileManager objects" />
+    <MESSAGE value="Added world map" />
+    <MESSAGE value="Added dirt, sand, and tree tiles" />
+    <MESSAGE value="Added object images" />
+    <MESSAGE value="Added new tiles in array and edited methods" />
+    <MESSAGE value="Added CollisionChecker to check for tile collision" />
+    <MESSAGE value="Edited paint method and added objects" />
+    <MESSAGE value="Added Rectangle object and collision checker variable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Rectangle object and collision checker variable" />
   </component>
 </project>
