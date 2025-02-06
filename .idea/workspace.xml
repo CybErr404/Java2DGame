@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6fddc9d-7be4-40ce-a9c0-d173bb58f81f" name="Changes" comment="Added Entity and Player classes">
-      <change afterPath="$PROJECT_DIR$/src/Tile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TileManager.java" afterDir="false" />
+    <list default="true" id="b6fddc9d-7be4-40ce-a9c0-d173bb58f81f" name="Changes" comment="Added Player and TileManager objects">
+      <change afterPath="$PROJECT_DIR$/src/CollisionChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java2DGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java2DGame.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TileManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +88,49 @@
       <option name="project" value="LOCAL" />
       <updated>1738426225312</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added sprite files">
+      <created>1738633211526</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738633211526</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added background tile files">
+      <created>1738633233389</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738633233389</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added first map template">
+      <created>1738633249253</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738633249253</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Created Entity and Player classes">
+      <created>1738633274775</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1738633274775</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Created Tile and TileManager classes">
+      <created>1738633300321</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738633300321</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added Player and TileManager objects">
+      <created>1738633336753</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738633336753</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,6 +148,12 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added comments" />
     <MESSAGE value="Added Entity and Player classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Entity and Player classes" />
+    <MESSAGE value="Added sprite files" />
+    <MESSAGE value="Added background tile files" />
+    <MESSAGE value="Added first map template" />
+    <MESSAGE value="Created Entity and Player classes" />
+    <MESSAGE value="Created Tile and TileManager classes" />
+    <MESSAGE value="Added Player and TileManager objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Player and TileManager objects" />
   </component>
 </project>
