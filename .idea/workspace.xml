@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6fddc9d-7be4-40ce-a9c0-d173bb58f81f" name="Changes" comment="Added collision checker code and edited methods">
-      <change afterPath="$PROJECT_DIR$/src/AssetSetter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OBJChest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OBJDoor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OBJKey.java" afterDir="false" />
+    <list default="true" id="b6fddc9d-7be4-40ce-a9c0-d173bb58f81f" name="Changes" comment="Created AssetSetter class for object handling">
       <change afterPath="$PROJECT_DIR$/src/SuperObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -189,7 +184,21 @@
       <option name="project" value="LOCAL" />
       <updated>1738884424598</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Created key, door, and chest object classes">
+      <created>1738887498729</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1738887498729</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Created AssetSetter class for object handling">
+      <created>1738887526068</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1738887526068</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,6 +230,8 @@
     <MESSAGE value="Edited paint method and added objects" />
     <MESSAGE value="Added Rectangle object and collision checker variable" />
     <MESSAGE value="Added collision checker code and edited methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added collision checker code and edited methods" />
+    <MESSAGE value="Created key, door, and chest object classes" />
+    <MESSAGE value="Created AssetSetter class for object handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created AssetSetter class for object handling" />
   </component>
 </project>
