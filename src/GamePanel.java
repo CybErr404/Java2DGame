@@ -41,6 +41,9 @@ public class GamePanel extends JPanel implements Runnable {
     //Player object from Player class.
     Player player = new Player(this, keyHandler);
 
+    public SuperObject obj[] = new SuperObject[10];
+    public AssetSetter assetSetter = new AssetSetter(this);
+
     CollisionChecker collisionChecker = new CollisionChecker(this);
 
     //Constructor that sets the main attributes of the game panel.
@@ -56,6 +59,10 @@ public class GamePanel extends JPanel implements Runnable {
         this.addKeyListener(keyHandler);
         //Sets focusability to true. Allows program to focus on keyboard input.
         this.setFocusable(true);
+    }
+
+    public void setUpGame() {
+        assetSetter.setObject();
     }
 
     //Method that starts a specific game thread.
@@ -174,8 +181,17 @@ public class GamePanel extends JPanel implements Runnable {
         //Graphics2D extends Graphics - creates a Graphics2D object by casting g to a Graphics2D.
         Graphics2D g2 = (Graphics2D) g;
 
+        //TILE
         tileManager.draw(g2);
 
+        //OBJECT
+        for(int i = 0; i < obj.length; i++) {
+            if(obj[i] != null) {
+                obj[i].draw(g2, this);
+            }
+        }
+
+        //PLAYER
         player.draw(g2);
 
         //Ensures that content is removed when program execution finishes. Saves memory.
