@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6fddc9d-7be4-40ce-a9c0-d173bb58f81f" name="Changes" comment="Added object drawing">
+    <list default="true" id="b6fddc9d-7be4-40ce-a9c0-d173bb58f81f" name="Changes" comment="Created solid area variables">
+      <change afterPath="$PROJECT_DIR$/res/Sound/BlueBoyAdventure.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Sound/coin.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Sound/fanfare.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Sound/powerup.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Sound/unlock.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OBJBoots.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_1_2025_11_07_AM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_1_2025_11_07_AM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssetSetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CollisionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CollisionChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OBJDoor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OBJDoor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SuperObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +51,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\arcti\IdeaProjects\Java2DGame\res\Sound" />
       <recent name="C:\Users\arcti\IdeaProjects\Java2DGame\res\Objects" />
       <recent name="C:\Users\arcti\IdeaProjects\Java2DGame\res\Player" />
     </key>
@@ -220,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1738888020546</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Created solid area variables">
+      <created>1738973798246</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1738973798246</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,6 +277,7 @@
     <MESSAGE value="Included game setup method call" />
     <MESSAGE value="Added SuperObject class and created draw method" />
     <MESSAGE value="Added object drawing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added object drawing" />
+    <MESSAGE value="Created solid area variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created solid area variables" />
   </component>
 </project>
