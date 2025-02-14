@@ -25,8 +25,6 @@ public class GamePanel extends JPanel implements Runnable {
     //WORLD SETTINGS
     public final int maxWorldCol = 50;
     public final int maxWorldRow = 50;
-    public final int worldWidth = tileSize * maxWorldCol;
-    public final int worldHeight = tileSize * maxWorldRow;
 
     //FPS
     //Sets FPS to 60.
@@ -37,6 +35,10 @@ public class GamePanel extends JPanel implements Runnable {
     //Creates new KeyHandler object for key mapping.
     KeyHandler keyHandler = new KeyHandler();
     //Helps represent concept of time - keeps game running in real time until closed.
+    Sound soundEffects = new Sound();
+    Sound music = new Sound();
+
+    public UI ui = new UI(this);
     Thread gameThread;
     //Player object from Player class.
     Player player = new Player(this, keyHandler);
@@ -63,6 +65,7 @@ public class GamePanel extends JPanel implements Runnable {
 
     public void setUpGame() {
         assetSetter.setObject();
+        playMusic(0);
     }
 
     //Method that starts a specific game thread.
@@ -181,6 +184,13 @@ public class GamePanel extends JPanel implements Runnable {
         //Graphics2D extends Graphics - creates a Graphics2D object by casting g to a Graphics2D.
         Graphics2D g2 = (Graphics2D) g;
 
+        //DEBUG
+        long drawStart = 0;
+        if(keyHandler.checkDrawTime) {
+            drawStart = System.nanoTime();
+        }
+
+
         //TILE
         tileManager.draw(g2);
 
@@ -194,7 +204,34 @@ public class GamePanel extends JPanel implements Runnable {
         //PLAYER
         player.draw(g2);
 
+        //UI
+        ui.draw(g2);
+
+        //DEBUG
+        if(keyHandler.checkDrawTime) {
+            long drawEnd = System.nanoTime();
+            long passed = drawEnd - drawStart;
+            g2.setColor(Color.white);
+            g2.drawString("Draw Time: "  + passed, 10, 400);
+            System.out.println("Draw Time: " + passed);
+        }
+
         //Ensures that content is removed when program execution finishes. Saves memory.
         g2.dispose();
+    }
+
+    public void playMusic(int i) {
+        music.setFile(i);
+        music.play();
+        music.loop();
+    }
+
+    public void stopMusic() {
+        music.stop();
+    }
+
+    public void playSoundEffect(int i) {
+        soundEffects.setFile(i);
+        soundEffects.play();
     }
 }
