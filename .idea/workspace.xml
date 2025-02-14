@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6fddc9d-7be4-40ce-a9c0-d173bb58f81f" name="Changes" comment="Created solid area variables">
-      <change afterPath="$PROJECT_DIR$/res/Sound/BlueBoyAdventure.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Sound/coin.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Sound/fanfare.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Sound/powerup.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Sound/unlock.wav" afterDir="false" />
+    <list default="true" id="b6fddc9d-7be4-40ce-a9c0-d173bb58f81f" name="Changes" comment="Added sound files">
       <change afterPath="$PROJECT_DIR$/src/OBJBoots.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Sound.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/UI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UtilityTool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_1_2025_11_07_AM_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_1_2025_11_07_AM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Tiles/dirt.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/Tiles/dirt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Tiles/grass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Tiles/sand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Tiles/tree.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/Tiles/tree.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Tiles/wall.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/Tiles/wall.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Tiles/water.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssetSetter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CollisionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CollisionChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeyHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OBJChest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OBJChest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/OBJDoor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OBJDoor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OBJKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OBJKey.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SuperObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TileManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1738973798246</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Added sound files">
+      <created>1739156640378</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1739156640378</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -278,6 +292,7 @@
     <MESSAGE value="Added SuperObject class and created draw method" />
     <MESSAGE value="Added object drawing" />
     <MESSAGE value="Created solid area variables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created solid area variables" />
+    <MESSAGE value="Added sound files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added sound files" />
   </component>
 </project>
