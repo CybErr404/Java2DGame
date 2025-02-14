@@ -10,6 +10,10 @@ public class Player extends Entity {
     public final int screenX;
     public final int screenY;
 
+    public int hasKey = 0;
+
+    int standCounter;
+
     public Player(GamePanel gp, KeyHandler keyHandler) {
         this.gp = gp;
         this.keyHandler = keyHandler;
@@ -39,20 +43,27 @@ public class Player extends Entity {
     }
 
     public void getPlayerImage() {
+        up1 = setup("girl_up_1");
+        up2 = setup("girl_up_2");
+        down1 = setup("girl_down_1");
+        down2 = setup("girl_down_2");
+        left1 = setup("girl_left_1");
+        left2 = setup("girl_left_2");
+        right1 = setup("girl_right_1");
+        right2 = setup("girl_right_2");
+    }
+
+    public BufferedImage setup(String imageName) {
+        UtilityTool utilityTool = new UtilityTool();
+        BufferedImage image = null;
+
         try {
-            up1 = ImageIO.read(getClass().getClassLoader().getResourceAsStream("Player/girl_up_1.png"));
-            up2 = ImageIO.read(getClass().getClassLoader().getResourceAsStream("Player/girl_up_2.png"));
-            down1 = ImageIO.read(getClass().getClassLoader().getResourceAsStream("Player/girl_down_1.png"));
-            down2 = ImageIO.read(getClass().getClassLoader().getResourceAsStream("Player/girl_down_2.png"));
-            left1 = ImageIO.read(getClass().getClassLoader().getResourceAsStream("Player/girl_left_1.png"));
-            left2 = ImageIO.read(getClass().getClassLoader().getResourceAsStream("Player/girl_left_2.png"));
-            right1 = ImageIO.read(getClass().getClassLoader().getResourceAsStream("Player/girl_right_1.png"));
-            right2 = ImageIO.read(getClass().getClassLoader().getResourceAsStream("Player/girl_right_2.png"));
-
-
+            image = ImageIO.read(getClass().getClassLoader().getResourceAsStream("Player/" + imageName + ".png"));
+            image = utilityTool.scaleImage(image, gp.tileSize, gp.tileSize);
         } catch(IOException e) {
             e.printStackTrace();
         }
+        return image;
     }
 
     public void update() {
@@ -79,6 +90,10 @@ public class Player extends Entity {
             //CHECK TILE COLLISION
             collisionOn = false;
             gp.collisionChecker.checkTile(this);
+
+            //CHECK OBJECT COLLISION
+            int objIndex = gp.collisionChecker.checkObject(this, true);
+            pickUpObject(objIndex);
 
             //IF COLLISION IS FALSE, PLAYER CAN'T MOVE.
             if(!collisionOn) {
@@ -109,7 +124,51 @@ public class Player extends Entity {
                 spriteCounter = 0;
             }
         }
+        else {
+            standCounter++;
+            if(standCounter == 20) {
+                spriteNum = 1;
+                standCounter = 0;
+            }
+        }
     }
+
+    public void pickUpObject(int index) {
+        if(index != 999) {
+            String objectName = gp.obj[index].name;
+            switch(objectName) {
+                case "Key":
+                    gp.playSoundEffect(1);
+                    hasKey++;
+                    gp.obj[index] = null;
+                    gp.ui.showMessage("You got a key!");
+                    break;
+                case "Door":
+                    gp.playSoundEffect(3);
+                    if (hasKey > 0) {
+                        gp.obj[index] = null;
+                        hasKey--;
+                        gp.ui.showMessage("You opened the door!");
+                    }
+                    else {
+                        gp.ui.showMessage("You need a key to get through here.");
+                }
+                    break;
+                case "Boots":
+                    gp.playSoundEffect(2);
+                    speed += 2;
+                    gp.obj[index] = null;
+                    gp.ui.showMessage("Speed up!");
+                    break;
+                case "Chest":
+                    gp.ui.gameFinished = true;
+                    gp.stopMusic();
+                    gp.playSoundEffect(4);
+                    break;
+            }
+        }
+    }
+
     public void draw(Graphics2D g2) {
 //        //Sets color of component to white.
 //        g2.setColor(Color.white);
@@ -153,6 +212,6 @@ public class Player extends Entity {
                 break;
         }
 
-        g2.drawImage(image, screenX, screenY, gp.tileSize, gp.tileSize, null);
+        g2.drawImage(image, screenX, screenY, null);
     }
 }
