@@ -12,6 +12,9 @@ public class KeyHandler implements KeyListener {
     //Variable declarations for when W, A, S, and D are pressed.
     public boolean upPressed, downPressed, leftPressed, rightPressed;
 
+    //DEBUG
+    boolean checkDrawTime = false;
+
     /**
      * Method that determines which key has been typed.
      * @param e the event to be processed
@@ -45,6 +48,15 @@ public class KeyHandler implements KeyListener {
         //Checks to see if the key pressed was D.
         if(code == KeyEvent.VK_D) {
             rightPressed = true;
+        }
+
+        if(code == KeyEvent.VK_T) {
+            if(checkDrawTime == false) {
+                checkDrawTime = true;
+            }
+            else if(checkDrawTime == true) {
+                checkDrawTime = false;
+            }
         }
     }
 
