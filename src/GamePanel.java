@@ -43,6 +43,8 @@ public class GamePanel extends JPanel implements Runnable {
     //Player object from Player class.
     Player player = new Player(this, keyHandler);
 
+    Font arial20 = new Font("Arial", Font.PLAIN, 20);
+
     public SuperObject obj[] = new SuperObject[10];
     public AssetSetter assetSetter = new AssetSetter(this);
 
@@ -156,7 +158,7 @@ public class GamePanel extends JPanel implements Runnable {
             //Calculates the current FPS and prints it into the console.
             if(timer >= 1000000000) {
                 //Prints current FPS.
-                System.out.println("FPS: " + drawCount);
+                //System.out.println("FPS: " + drawCount);
                 //Sets draw count to 0.
                 drawCount = 0;
                 //Sets timer to 0.
@@ -213,7 +215,19 @@ public class GamePanel extends JPanel implements Runnable {
             long passed = drawEnd - drawStart;
             g2.setColor(Color.white);
             g2.drawString("Draw Time: "  + passed, 10, 400);
-            System.out.println("Draw Time: " + passed);
+            //System.out.println("Draw Time: " + passed);
+        }
+
+        //CHANGE CAMERA
+        if(keyHandler.changeCamera) {
+            g2.setFont(arial20);
+            g2.setColor(Color.white);
+            g2.drawString("Camera Mode: Still", 10, 570);
+        }
+        else if(!keyHandler.changeCamera) {
+            g2.setFont(arial20);
+            g2.setColor(Color.white);
+            g2.drawString("Camera Mode: Follow Player", 10, 570);
         }
 
         //Ensures that content is removed when program execution finishes. Saves memory.
