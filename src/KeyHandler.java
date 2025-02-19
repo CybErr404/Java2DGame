@@ -15,6 +15,9 @@ public class KeyHandler implements KeyListener {
     //DEBUG
     boolean checkDrawTime = false;
 
+    //CAMERA CHANGE - EXTRA ASSIGNMENT
+    boolean changeCamera = false;
+
     /**
      * Method that determines which key has been typed.
      * @param e the event to be processed
@@ -51,11 +54,20 @@ public class KeyHandler implements KeyListener {
         }
 
         if(code == KeyEvent.VK_T) {
-            if(checkDrawTime == false) {
+            if(!checkDrawTime) {
                 checkDrawTime = true;
             }
-            else if(checkDrawTime == true) {
+            else if(checkDrawTime) {
                 checkDrawTime = false;
+            }
+        }
+
+        if(code == KeyEvent.VK_Q) {
+            if(!changeCamera) {
+                changeCamera = true;
+            }
+            else if(changeCamera) {
+                changeCamera = false;
             }
         }
     }

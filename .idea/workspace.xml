@@ -1,29 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6fddc9d-7be4-40ce-a9c0-d173bb58f81f" name="Changes" comment="Added sound files">
-      <change afterPath="$PROJECT_DIR$/src/OBJBoots.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UtilityTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_1_2025_11_07_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_1_2025_11_07_AM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="b6fddc9d-7be4-40ce-a9c0-d173bb58f81f" name="Changes" comment="Updated CollisionChecker class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Tiles/dirt.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/Tiles/dirt.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Tiles/grass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Tiles/sand.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Tiles/tree.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/Tiles/tree.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Tiles/wall.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/Tiles/wall.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Tiles/water.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssetSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CollisionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CollisionChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OBJChest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OBJChest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OBJDoor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OBJDoor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OBJKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OBJKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SuperObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TileManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,12 +31,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\arcti\IdeaProjects\Java2DGame\res\Sound" />
@@ -254,7 +238,84 @@
       <option name="project" value="LOCAL" />
       <updated>1739156640378</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Changed file structure">
+      <created>1739493831285</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1739493831290</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added updated tiles">
+      <created>1739493867109</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1739493867109</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Added updated map">
+      <created>1739493881930</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1739493881930</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Updated object resizing">
+      <created>1739493925542</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1739493925542</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Added UtilityTool class to help with resizing">
+      <created>1739493946225</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1739493946225</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Updated Player class">
+      <created>1739493966158</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1739493966158</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Finished Sound class">
+      <created>1739493995651</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1739493995651</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Added UI class to display text">
+      <created>1739494010021</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1739494010021</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Updated GamePanel">
+      <created>1739494027377</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1739494027377</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Changed resizing">
+      <created>1739494049668</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1739494049668</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Updated CollisionChecker class">
+      <created>1739494067644</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1739494067644</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,16 +330,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial commit" />
-    <MESSAGE value="Added comments" />
-    <MESSAGE value="Added Entity and Player classes" />
-    <MESSAGE value="Added sprite files" />
-    <MESSAGE value="Added background tile files" />
-    <MESSAGE value="Added first map template" />
-    <MESSAGE value="Created Entity and Player classes" />
-    <MESSAGE value="Created Tile and TileManager classes" />
-    <MESSAGE value="Added Player and TileManager objects" />
-    <MESSAGE value="Added world map" />
     <MESSAGE value="Added dirt, sand, and tree tiles" />
     <MESSAGE value="Added object images" />
     <MESSAGE value="Added new tiles in array and edited methods" />
@@ -293,6 +344,17 @@
     <MESSAGE value="Added object drawing" />
     <MESSAGE value="Created solid area variables" />
     <MESSAGE value="Added sound files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added sound files" />
+    <MESSAGE value="Changed file structure" />
+    <MESSAGE value="Added updated tiles" />
+    <MESSAGE value="Added updated map" />
+    <MESSAGE value="Updated object resizing" />
+    <MESSAGE value="Added UtilityTool class to help with resizing" />
+    <MESSAGE value="Updated Player class" />
+    <MESSAGE value="Finished Sound class" />
+    <MESSAGE value="Added UI class to display text" />
+    <MESSAGE value="Updated GamePanel" />
+    <MESSAGE value="Changed resizing" />
+    <MESSAGE value="Updated CollisionChecker class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated CollisionChecker class" />
   </component>
 </project>
