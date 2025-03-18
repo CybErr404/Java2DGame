@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6fddc9d-7be4-40ce-a9c0-d173bb58f81f" name="Changes" comment="Updated CollisionChecker class">
+    <list default="true" id="b6fddc9d-7be4-40ce-a9c0-d173bb58f81f" name="Changes" comment="Added key if-statements for camera mode">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TileManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -315,7 +312,21 @@
       <option name="project" value="LOCAL" />
       <updated>1739494067644</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Added camera mode key statements">
+      <created>1739926436877</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1739926436877</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Added key if-statements for camera mode">
+      <created>1739926470784</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1739926470784</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -330,8 +341,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added dirt, sand, and tree tiles" />
-    <MESSAGE value="Added object images" />
     <MESSAGE value="Added new tiles in array and edited methods" />
     <MESSAGE value="Added CollisionChecker to check for tile collision" />
     <MESSAGE value="Edited paint method and added objects" />
@@ -355,6 +364,8 @@
     <MESSAGE value="Updated GamePanel" />
     <MESSAGE value="Changed resizing" />
     <MESSAGE value="Updated CollisionChecker class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated CollisionChecker class" />
+    <MESSAGE value="Added camera mode key statements" />
+    <MESSAGE value="Added key if-statements for camera mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added key if-statements for camera mode" />
   </component>
 </project>
