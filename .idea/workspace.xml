@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6fddc9d-7be4-40ce-a9c0-d173bb58f81f" name="Changes" comment="Added key if-statements for camera mode">
+    <list default="true" id="b6fddc9d-7be4-40ce-a9c0-d173bb58f81f" name="Changes" comment="Updated workspace">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +32,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/arcti/IdeaProjects/Java2DAdventure",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -326,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1739926470784</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Updated workspace">
+      <created>1742334315722</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1742334315722</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -341,7 +349,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added new tiles in array and edited methods" />
     <MESSAGE value="Added CollisionChecker to check for tile collision" />
     <MESSAGE value="Edited paint method and added objects" />
     <MESSAGE value="Added Rectangle object and collision checker variable" />
@@ -366,6 +373,7 @@
     <MESSAGE value="Updated CollisionChecker class" />
     <MESSAGE value="Added camera mode key statements" />
     <MESSAGE value="Added key if-statements for camera mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added key if-statements for camera mode" />
+    <MESSAGE value="Updated workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated workspace" />
   </component>
 </project>
