@@ -28,6 +28,7 @@ public class Main {
         //Ensures the window is visible when run.
         window.setVisible(true);
 
+        //Sets up the game.
         gamePanel.setUpGame();
 
         //Starts a game thread using current game panel.

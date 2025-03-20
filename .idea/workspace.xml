@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Java2DGame:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6fddc9d-7be4-40ce-a9c0-d173bb58f81f" name="Changes" comment="Updated workspace" />
+    <list default="true" id="b6fddc9d-7be4-40ce-a9c0-d173bb58f81f" name="Changes" comment="Updated workspace">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,15 +33,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/arcti/IdeaProjects/Java2DGame/out",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\arcti\IdeaProjects\Java2DGame\res\Sound" />
@@ -331,7 +339,21 @@
       <option name="project" value="LOCAL" />
       <updated>1742334315722</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Updated workspace">
+      <created>1742334994447</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1742334994447</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Revert &quot;Initial commit&quot;&#10;&#10;This reverts commit 026a7f8a">
+      <created>1742335179881</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1742335179881</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -346,7 +368,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added CollisionChecker to check for tile collision" />
     <MESSAGE value="Edited paint method and added objects" />
     <MESSAGE value="Added Rectangle object and collision checker variable" />
     <MESSAGE value="Added collision checker code and edited methods" />
@@ -371,6 +392,7 @@
     <MESSAGE value="Added camera mode key statements" />
     <MESSAGE value="Added key if-statements for camera mode" />
     <MESSAGE value="Updated workspace" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated workspace" />
+    <MESSAGE value="Revert &quot;Initial commit&quot;&#10;&#10;This reverts commit 026a7f8a" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Initial commit&quot;&#10;&#10;This reverts commit 026a7f8a" />
   </component>
 </project>
